@@ -1,0 +1,23 @@
+import java.util.*;
+public class TakingInput{
+
+     public static void main(String []args){
+     
+         Scanner sc = new Scanner (System.in);   //Declaration and Initialization of object
+         
+          System.out.println("Hello Enter your name");
+          String name = sc.nextLine();          //Taking input as string
+          
+          System.out.println("Hello " + name + "..!"  + " Please enter your total points:");
+          int points = sc.nextInt();           //Taking inout as integer
+          
+          System.out.println("Enter the pointrate");
+          float pointrate = sc.nextFloat();    //Taking input as float
+          
+          System.out.println("Enter the totalrate");
+          float totalrate = sc.nextFloat();    //Taking input as float
+          
+          float percentage = totalrate* (pointrate + points);
+          System.out.println("the percentage is" + percentage); 
+     }
+}
