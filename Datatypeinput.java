@@ -16,7 +16,7 @@ public class Datatypeinput{
     System.out.println("Your long value is: " +longnum);
     double doublenum = sc.nextDouble();
     System.out.println("Your double value is: " +doublenum);
-    String name = sc.nextLine();
+    string name = sc.nextLine();
     System.out.println("Your string value is: " +name);
     boolean b = sc.nextBoolean();
     System.out.println("Your boolean value is: " +b);
