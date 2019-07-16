@@ -32,10 +32,15 @@ public static void main(String[]args){
         b=b/10;
     }
     
-    if(num==sum){
+    if(num==sum)
+    {
         System.out.println("The num is Armstrong");
     }
-    
+    else
+    {
+        System.out.println("the num is not Armstrong");
+    }
+        
 
 }
 }
