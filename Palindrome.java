@@ -7,12 +7,14 @@ public class Palindrome{
         num = sc.nextInt();
         System.out.println("The number you have inserted:" +num);
         int temp=num;
-        while(num != 0){
+        
+        while(num != 0){                //Reversing the number
             rem= num%10;
             revnum= (revnum*10) + rem;
             num=num/10;
         }
-        if(temp==revnum){
+        
+        if(temp==revnum){                //Checking for the condition
             System.out.println("The number you have inserted is a palindrome number");
         }
         else{
