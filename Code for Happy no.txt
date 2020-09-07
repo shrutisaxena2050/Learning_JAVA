@@ -1,0 +1,40 @@
+import java.util.Scanner;
+import java.util.HashSet;
+public class Main{
+    public static void main(String []args){
+        int num;
+        int rem;
+        int sum=0;
+        Scanner sc=new Scanner(System.in);
+        num= sc.nextInt();
+        int temp = num;
+        HashSet<Integer> hSet = new HashSet<Integer>();
+        System.out.println("The num you have entered:" +num);
+        
+        while(num != 0){
+            
+                rem=num%10; 
+                num=num/10;
+                sum = sum + rem*rem;
+                System.out.println(sum);
+                if(num <=0 ){
+                    if(hSet.contains(sum)){
+                        System.out.println("The No is UnHappy");
+                        break;
+                    }
+                    else{
+                        hSet.add(sum);
+                    }    
+                    
+                    if(sum == 1){
+                        System.out.println("the num is happy");
+                        break;
+                    }
+                    else if(sum != 1){
+                        num = sum;
+                        sum = 0;
+                    }
+                }
+        }
+    }
+}
